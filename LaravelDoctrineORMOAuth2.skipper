@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<skipper version="3.3.7.1828" mvc="Without MVC" orm="Doctrine2" name="laravel-doctrine-oauth2" uuid="ded719d5-093a-4cc1-a177-81fbac436a03">
+  <module name="\laravel-doctrine-oauth2" local-name="laravel-doctrine-oauth2" namespace="\ApiSkeletons\Laravel\Doctrine\OAuth2" local-namespace="ApiSkeletons\Laravel\Doctrine\OAuth2" export-format="Doctrine2PhpAttributes" export-path="." uuid="da2d1e0a-048e-4728-a980-e3e6024e6b59">
+    <entity name="\ApiSkeletons\Laravel\Doctrine\OAuth2\ClientEntity" local-name="ClientEntity" namespace="\ApiSkeletons\Laravel\Doctrine\OAuth2" uuid="b53a5fbc-5faa-483d-abc1-cfb438c683d5">
+      <field name="identifier" type="string" required="true" unique="true" primary="true" uuid="d3be23a3-6c81-4ec1-b456-89d371525f0b"/>
+      <field name="name" type="string" required="true" uuid="5600a465-dbdf-4309-a037-26e3db3e9dfb"/>
+      <field name="redirectUrl" type="string" uuid="15443880-5c28-44c7-b1fd-3abddaa1969b"/>
+      <field name="isConfidential" type="boolean" required="true" uuid="99209800-1e8d-4fe1-ae1e-e1a313a5c2cf"/>
+    </entity>
+  </module>
+  <visual-data>
+    <entity uuid="b53a5fbc-5faa-483d-abc1-cfb438c683d5" bg-color="#FFFFFF" hdr-color="#D2D2D2" position-x="10" position-y="20"/>
+    <module uuid="da2d1e0a-048e-4728-a980-e3e6024e6b59" bg-color="#FEFCE8" position-x="61" position-y="72" size-x="11" size-x2="539" size-y="22" size-y2="428"/>
+    <project uuid="ded719d5-093a-4cc1-a177-81fbac436a03" size-x="0" size-x2="620" size-y="0" size-y2="520"/>
+  </visual-data>
+</skipper>

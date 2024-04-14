@@ -1,0 +1,40 @@
+{
+    "name": "api-skeletons/laravel-doctrine-orm-oauth2",
+    "description": "Doctrine OAuth2 Adapter for Laravel",
+    "type": "library",
+    "require": {
+        "league/oauth2-server": "^8.5",
+        "doctrine/orm": "^3.1"
+    },
+    "require-dev": {
+        "php-parallel-lint/php-parallel-lint": "^1.4",
+        "vimeo/psalm": "^5.23",
+        "doctrine/coding-standard": "^12.0",
+        "phpunit/phpunit": "^3.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ApiSkeletons\\Laravel\\Doctrine\\ORM\\OAuth2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tom H Anderson",
+            "email": "tom.h.anderson@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test": [
+            "vendor/bin/parallel-lint src tests",
+            "vendor/bin/phpcs",
+            "vendor/bin/psalm",
+            "vendor/bin/phpunit"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
